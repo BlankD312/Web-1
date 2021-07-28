@@ -43,7 +43,7 @@
                 }
       h1{  font-size: 50px;
            text-align: center;
-         font-family: DX하늘구름, DXHanlgrum; }
+         font-family: NanumGothic, 나눔고딕; }
       table{
 
              font-size: 20px;
@@ -69,17 +69,18 @@
               font-size: 20px;
               border: 1px solid black; } // solid is for the line.(solid line, dotted line...)
 
+              @font-face{
+                font-family: NanumGothic; //내가 사용할 웹 폰트 패밀리명을 NanumGothic으로 하겠다
+                src: local(NanumGothicR),
+                local(NanumGothic),
+                url(NanumGothicR.eot?#iefix) format('embedded-opentype'),
+                url(NanumGothicR.woff) format('woff'),
+                url(NanumGothicR.ttf) format('truetype');
+                font-style: normal;
+                font-weight: normal;
+                unicode-range: U+0-10FFFF;
+              }
 
-              @font-face {
-                font-family: ; DXHanlgrum;
-                src:
-                     local(DXHanlgrum-KSCpc-EUC-H)
-                     url(DXHanlgrum-KSCpc-EUC-H.eot), format('embedded-opentype';)
-                     url(DXHanlgrum-KSCpc-EUC-H.woff) format(‘woff’),
-                     url(DXHanlgrum-KSCpc-EUC-H.ttf) format('truetype');  }
-
-
-    </style>
 
     <table>
 
