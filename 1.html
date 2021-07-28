@@ -41,12 +41,12 @@
       #article{  padding-left: 80px;
                  padding-right: 80px;
                  font-size: 20px;
-                 font-family: 영화자막;
+                 font-family: Kalam;
                  line-height: 150%;
                 }
       h1{  font-size: 50px;
            text-align: center;
-         font-family: 나눔고딕; }
+         font-family: Kalam; }
       table{
 
              font-size: 20px;
@@ -75,7 +75,7 @@
               @font-face{
                       font-family: 나눔고딕; //내가 사용할 웹 폰트 패밀리명을 NanumGothic으로 하겠다
                       src:
-                      local(),
+                      local(NanumGothic),
                       url(NanumGothic.eot) format('embedded-opentype'),
                       url(NanumGothic.woff) format('woff');
                       font-style: normal;
@@ -84,7 +84,9 @@
                     }
 
           @font-face {
-          font-family: 영화자막;
+          font-family: 영화자막; //이 폰트의 라이선스가 존재하지 않기 때문에 나타낼 수 없다. 또한 eot 또는 woff
+          파일이 없고 ttf타입만 있는 경우 적용이 되지 않는다. 대신 구글에서 html 전용으로만
+          쓸 수 있게 하는 코드가 있다.
           src: local(DXMSubtitlesB),
                url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB-KSCpc-EUC-H.eot?#iefix) format('embedded-opentype'),
                url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB-KSCpc-EUC-H.woff2) format('woff2'),
