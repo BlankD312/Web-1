@@ -1,0 +1,106 @@
+/* div{ color: aqua;} div is adaptable both id tag and only div tag*/
+
+
+     #article{  padding-left: 80px;
+                padding-right: 80px;
+                padding-top: 80px;
+                font-size: 20px;
+                font-family: Kalam;
+                line-height: 150%;
+               }
+
+     h1{  font-size: 50px;
+          text-align: center;
+          font-family: Kalam;
+          border-bottom: 3px dotted black;
+          margin: 0px;
+          padding: 10px;
+
+      }
+     table{
+
+            font-size: 20px;
+            font-family: 나눔고딕;
+            border-collapse: separate;
+            display: inline-table;
+            padding-left: 80px; // contents in the border
+            margin-left: 80px; // outside from border,
+             when there's nothing in the left(or other side), it doesn't work. This code think the things
+             with border is primery and void is secondary.
+            margin-bottom: 80px;
+            border-spacing: 0px; // interval between tds
+          }
+
+          td{
+
+              font-size: 20px;
+              border: 1px solid black;
+              padding: 10px;
+            }
+
+          th{
+
+
+             font-size: 20px;
+             border: 1px solid black; } /* solid is for the line.(solid line, dotted line...)*/
+
+          body{ margin: 0px;
+          }
+
+             @font-face{
+                     font-family: 나눔고딕; // for the name which i'll use in other css code. doesn't matter.
+                     src:
+                     local(NanumGothic),
+                     url(NanumGothic.eot) format('embedded-opentype'),
+                     url(NanumGothic.woff) format('woff');
+                     font-style: normal;
+                     font-weight: normal;
+                     unicode-range: U+0-10FFFF;
+                   }
+
+         @font-face {
+         font-family: 영화자막;
+         //Cannot use this bcs I don't have the license. And even if there's a file(like ttf) but
+         not eot or woff, it doesn't work. But there's a google service which provides other html
+         codes for using that fonts.
+         src:
+         local(DXMSubtitlesB),
+         url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB-KSCpc-EUC-H.eot?#iefix) format('embedded-opentype'),
+         url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB-KSCpc-EUC-H.woff2) format('woff2'),
+         url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB-KSCpc-EUC-H.woff) format('woff'),
+         url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB.ttf) format('truetype');
+         font-style: normal;
+         font-weight: normal;
+         unicode-range: U+0-10FFFF;
+       }
+       @media (max-width: 520px) {
+
+         #article{ padding-left: 15px;
+                   padding-right: 10px;
+                   font-size: 15px;
+                   }
+
+        h1{ font-size: 30px;
+            text-align: left;
+              }
+
+        table{  font-size: 15px;
+               padding-left:30px;}
+
+        td{  font-size: 15px; }
+        th{  font-size: 15px; }
+
+  }/* CSS always gives priority to the bottom(lastest) code*/
+
+
+     #night_day{ margin: 10px;
+                 font-size: 20px;
+                 position: absolute;
+                 left:80px; top: 112px;
+                 padding: 10px;
+               }
+     #name{  padding: 3px;
+             font-size: 17px;
+             width: 70px;
+             position: absolute;
+             left:267px; top: 132px;}

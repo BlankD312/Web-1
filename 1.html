@@ -5,12 +5,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file1style.css">
     <title>Home</title>
       <h1>I want to be <strong><u>happy</u></strong></h1>
 
   </head>
   <body>
 
+    <input id="night_day" type="button" value="DARK MODE"
+    onclick="
+             if( document.querySelector('#night_day').value ==='DARK MODE'){
+
+
+             document.querySelector('body').style.backgroundColor='black';
+             document.querySelector('body').style.color='white';
+             document.querySelector('h1').style.borderColor='white';
+             document.querySelector('#night_day').value='LIGHT MODE';     }
+
+             else {
+
+               document.querySelector('body').style.backgroundColor='white';
+               document.querySelector('body').style.color='black';
+               document.querySelector('h1').style.borderColor='black';
+               document.querySelector('#night_day').value='DARK MODE';
+             }
+
+
+            ">
+    <input id="name" type="text" onchange="alert('등록되었습니다.')">
 
     <div id="article">
 
@@ -36,73 +58,10 @@
 
   </div>
     <br>
-
-    <style media="screen">
-      #article{  padding-left: 80px;
-                 padding-right: 80px;
-                 font-size: 20px;
-                 font-family: Kalam;
-                 line-height: 150%;
-                }
-      h1{  font-size: 50px;
-           text-align: center;
-         font-family: Kalam; }
-      table{
-
-             font-size: 20px;
-             font-family: 나눔고딕;
-             border-collapse: separate;
-             display: inline-table;
-             padding-left: 80px; // contents in the border
-             margin-left: 80px; // outside from border
-             margin-bottom: 80px;
-             border-spacing: 0px;
-           }
-
-           td{
-
-               font-size: 20px;
-               border: 1px solid black;
-               padding: 10px;
-             }
-
-           th{
-
-
-              font-size: 20px;
-              border: 1px solid black; } // solid is for the line.(solid line, dotted line...)
-
-              @font-face{
-                      font-family: 나눔고딕; //내가 사용할 웹 폰트 패밀리명을 NanumGothic으로 하겠다
-                      src:
-                      local(NanumGothic),
-                      url(NanumGothic.eot) format('embedded-opentype'),
-                      url(NanumGothic.woff) format('woff');
-                      font-style: normal;
-                      font-weight: normal;
-                      unicode-range: U+0-10FFFF;
-                    }
-
-          @font-face {
-          font-family: 영화자막; //이 폰트의 라이선스가 존재하지 않기 때문에 나타낼 수 없다. 또한 eot 또는 woff
-          파일이 없고 ttf타입만 있는 경우 적용이 되지 않는다. 대신 구글에서 html 전용으로만
-          쓸 수 있게 하는 코드가 있다.
-          src: local(DXMSubtitlesB),
-               url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB-KSCpc-EUC-H.eot?#iefix) format('embedded-opentype'),
-               url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB-KSCpc-EUC-H.woff2) format('woff2'),
-               url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB-KSCpc-EUC-H.woff) format('woff'),
-               url(/data/skin/front/udweb/udweb/font/DXMSubtitlesB.ttf) format('truetype');
-          font-style: normal;
-          font-weight: normal;
-          unicode-range: U+0-10FFFF;
-        }
-
-
-      </style>
-
     <table>
 
-      <tbody>
+      <tbody style="font-size:20px">
+        <div id="tableform">
         <tr>
           <th>Language</th>
           <th>Skills</th>
@@ -119,12 +78,18 @@
           <td>Spanish</td>
           <td>Little better than ordinary people</td>
         </tr>
+      </div>
       </tbody>
 
 
     </table>
+<!-- <div>just a...</div> -->
 
-language Spanish Korean English
+
+
+
+
+
     <br><br>
     <br>
         <a href="https://www.w3.org/" target="_blank" title="International web site(W3C)">
