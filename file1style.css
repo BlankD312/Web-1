@@ -3,8 +3,8 @@
 
      #article{  padding-left: 80px;
                 padding-right: 80px;
-                padding-top: 80px;
-                font-size: 20px;
+                padding-top: 90px;
+                font-size: 24px;
                 font-family: Kalam;
                 line-height: 150%;
                }
@@ -47,6 +47,19 @@
           body{ margin: 0px;
           }
 
+          #night_day{ margin: 10px;
+                      font-size: 20px;
+                      position: absolute;
+                      left:80px; top: 116px;
+                      padding: 10px;
+                    }
+          #name{  padding: 3px;
+                  font-size: 17px;
+                  width: 70px;
+                  position: absolute;
+                  left:267px; top: 132px;}
+
+
              @font-face{
                      font-family: 나눔고딕; // for the name which i'll use in other css code. doesn't matter.
                      src:
@@ -73,34 +86,35 @@
          font-weight: normal;
          unicode-range: U+0-10FFFF;
        }
-       @media (max-width: 520px) {
+       @media (max-width: 770px) {
 
          #article{ padding-left: 15px;
                    padding-right: 10px;
-                   font-size: 15px;
+                   font-size: 28px;
                    }
 
-        h1{ font-size: 30px;
+        h1{ font-size: 40px;
             text-align: left;
+            padding-left: 20PX;
               }
 
-        table{  font-size: 15px;
+        table{  font-size: 20px;
                padding-left:30px;}
 
-        td{  font-size: 15px; }
-        th{  font-size: 15px; }
+        td{  font-size: 20px; }
+        th{  font-size: 20px; }
+
+        #night_day{ margin: 10px;
+                    font-size: 20px;
+                    position: absolute;
+                    left:20px; top: 100px;
+                    padding: 10px;
+                  }
+        #name{  padding: 3px;
+                font-size: 17px;
+                width: 70px;
+                position: absolute;
+                left:220px; top: 118px;}
+
 
   }/* CSS always gives priority to the bottom(lastest) code*/
-
-
-     #night_day{ margin: 10px;
-                 font-size: 20px;
-                 position: absolute;
-                 left:80px; top: 112px;
-                 padding: 10px;
-               }
-     #name{  padding: 3px;
-             font-size: 17px;
-             width: 70px;
-             position: absolute;
-             left:267px; top: 132px;}
